@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Admin Home</title>
+      <link rel="icon" href="handcuffs.jpg" type="image/x-icon" style="opacity:0.5 ;"> 
+      <link rel="stylesheet" type="text/css" href="home.css">
+      <style>
+        body  
+  {  
+      margin: 50px;  
+      padding: 75 px;  
+      background-color:#7dd6ffba;  
+      font-family:'fantasy';  
+      background-image: url(5D27YV.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+  } 
+  h1{
+      text-align: center;
+      color: rgb(112, 125, 136);
+      font-size: 60px;
+  }
+  .custom-btn {
+      width: 100%;
+      height: 40px;
+      color: rgb(175, 255, 206);
+      border-radius: 5px;
+      font-family:monospace;
+      font-weight: 200;
+      font-size: 40px;
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+       box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+       7px 7px 20px 0px rgba(0,0,0,.1),
+       4px 4px 5px 0px rgba(0,0,0,.1);
+      outline: none;
+      text-align: center;
+    }
+    .btn-3 {
+      background: rgb(74, 76, 76);
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(0deg, rgba(51, 69, 58, 0.492) 0%, rgb(51, 69, 58) 100%);
+      line-height: 42px;
+      border: none;
+      
+    }
+    .btn-3 span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .btn-3:before,
+    .btn-3:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 0;
+       background: rgb(221, 247, 148);
+      transition: all 0.3s ease;
+    }
+    .btn-3:before {
+      height: 0%;
+      width: 2px;
+    }
+    .btn-3:after {
+      width: 0%;
+      height: 2px;
+    }
+    .btn-3:hover{
+       background: transparent;
+      box-shadow: none;
+    }
+    .btn-3:hover:before {
+      height: 100%;
+    }
+    .btn-3:hover:after {
+      width: 100%;
+    }
+    .btn-3 span:hover{
+       color: rgb(221, 247, 148);
+    }
+    .btn-3 span:before,
+    .btn-3 span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+       background: rgb(221, 247, 148);
+      transition: all 0.3s ease;
+    }
+    .btn-3 span:before {
+      width: 2px;
+      height: 0%;
+    }
+    .btn-3 span:after {
+      width: 0%;
+      height: 2px;
+    }
+    .btn-3 span:hover:before {
+      height: 100%;
+    }
+    .btn-3 span:hover:after {
+      width: 100%;
+    }
+      </style>
+      <script type="text/javascript">
+        function myfunc(){
+        
+            window.location.href="AddOfficer.html";
+        }
+        function myfunc1(){
+        
+        window.location.href="ViewCriminal.php";
+    }
+    function myfunc2(){
+        
+        window.location.href="Admin Details.php";
+    }
+    function myfunc3(){
+        
+        window.location.href="Officers.php";
+    }
+    </script>
+    </head>
+    <body>
+        <h1>Dashboard</h1>
+        <button class="custom-btn btn-3" onclick=myfunc()><span>Add Officer</span></button>
+        <br><br>
+        <button class="custom-btn btn-3" onclick=myfunc1()><span>View Criminal Details</span></button>
+        <br><br>
+        <button class="custom-btn btn-3" onclick=myfunc3()><span>View Officer Details</span></button>
+        <br><br>
+        <button class="custom-btn btn-3" onclick=myfunc2()><span>Profile</span></button>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Officer</title>
+    <link rel="icon" href="handcuffs.jpg" type="image/x-icon" style="opacity:0.5 ;"> 
+    <style>
+        body  
+        {  
+            margin: 50px;  
+            padding: 75 px;  
+            background-color:#7dd6ffba;  
+            font-family:'fantasy';  
+            background-image: url(5D27YV.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+        }
+        h3{
+  font-family: 'Times'; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:rgb(213, 244, 172);
+  text-align: center; 
+}
+button{  
+    width: 10%;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: rgb(0, 14, 1); 
+    background-color: rgb(91, 244, 91);
+    cursor: pointer;
+    float: right;
+}
+button:hover
+{
+    opacity: 0.8;
+}
+table{
+  font-family: Calibri; 
+  color:white; 
+  font-size: 20px; 
+  font-style: normal;
+  font-weight: bold;
+  text-align:; 
+  background: transparent; 
+  border-collapse: collapse; 
+  border: 2px solid rgb(231, 231, 239)
+}
+table.inner{
+  border: 20px
+} 
+    </style>
+  </head>
+<body>
+<h3>Enter Officer Details</h3>
+
+<form id="login" method="post" action="AddOfficer.php" >
+<table align="center" cellpadding = "15">
+ 
+<!----- Full Name ---------------------------------------------------------->
+<tr>
+<td>FULL NAME</td>
+<td><input type="text" name="Name" maxlength="30" required/>
+</td>
+</tr>
+
+<!----- User Name ---------------------------------------------------------->
+<tr>
+    <td>USERNAME</td>
+    <td><input type="text" name="Username"  maxlength="30"required/>
+    </td>
+    </tr>
+
+<!----- Id ---------------------------------------------------------->
+<tr>
+  <td>ID</td>
+  <td><input type="text" name="Id" maxlength="30"required/>
+  </td>
+  </tr>
+
+<!----- Password ---------------------------------------------------------->
+<tr>
+  <td>PASSWORD</td>
+  <td><input type="password" name="password"required/>
+  </td>
+  </tr>
+<tr>
+  <td>RE-ENTER PASSWORD</td>
+  <td><input type="password" name="confirm_password" required/>
+  </td>
+  </tr>
+ 
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+  <td>PHONE NUMBER</td>
+  <td>
+  <input type="text" name="Mobile_Number" maxlength="10" required />
+  </td>
+  </tr>
+
+<!----- Address ---------------------------------------------------------->
+<tr>
+  <td>ADDRESS <br /><br /><br /></td>
+  <td><textarea name="Address" rows="6" cols="20"></textarea></td>
+  </tr>
+
+<!----- Job ---------------------------------------------------------->
+<tr>
+  <td>JOB</td>
+  <td>
+  <input type="text" name="Job" maxlength="30" required/>
+  </td>
+  </tr>
+
+<br>
+</table>
+<br>
+<button type="Submit" name="sub" value="LOGIN" >Submit</button> 
+</form>
+
+</body>
+</html>

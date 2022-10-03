@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Home</title>
+  <link rel="icon" href="handcuffs.jpg" type="image/x-icon" style="opacity:0.5 ;"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px;  
+    padding: 75 px;  
+    background-color:#7dd6ffba;  
+    font-family:'fantasy';  
+    background-image: url(5D27YV.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+tr,td{
+  align-items: center;
+}
+table{
+  width: 100%;
+  height: 100%;
+  font-size: large;
+  border: 2px solid rgb(231, 231, 239);
+  padding: 20px;
+  align-content: center;
+}
+/* Add padding to containers */
+.container {
+  padding: 5px;
+  background: transparent;
+  border: #b4e7ffba;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #ffffff;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: rgb(79, 79, 79);
+  outline: none;
+  color: aquamarine;
+}
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+}
+h1{
+  text-align: center;
+}
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width:100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+form{
+  color: antiquewhite;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10%;
+    background-color:  #2C3E50;;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: antiquewhite;
+}
+
+.logo{
+    color: #FFF;
+    font-weight: 900;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+nav ul li a{
+    color: #FFF;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 1px;
+    font-size: 25px;
+}
+
+nav ul li a:hover{
+    color: #a1ceef;
+    background-color: rgb(10, 10, 10);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+/* Style the "active" element to highlight the current page */
+nav ul li a.active {
+  background-color: #050505;
+  color: white;
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Officer Details.php">Home</a></li>
+                <li><a href="AddCriminal.html">Add Criminal</a></li>
+                <li><a href="ViewCriminal.php">View Details</a></li>
+            </ul>
+        </nav>
+    </header>
+<form action="AddCriminal.php" method="post" >
+  <div class="container">
+    <table>
+      <h1>CRIMINAL REGISTRATION</h1>
+      <hr>
+      <tr>
+      <h1 >Criminal Details</h1>
+      <td>Criminal Number</td>
+      <td><input type="text" placeholder="Enter criminal no" name="cno" required></td>
+      <br>
+      </tr>
+      <tr>
+      <td>Criminal Name</td>
+      <td><input type="text" placeholder="Enter criminal name" name="cname" required></td>
+      <br>
+      </tr>
+      <tr>
+      <td>Gender</td>
+      <td><input type="radio" id="male" name="gender" value="male"></td>
+      <td>Male
+      <td><input type="radio" id="female" name="gender" value="female"></td>
+      <td>Female<br></td>
+      <td><input type="radio" id="third gender" name="gender" value="third gender"></td>
+      <td>Specify not to say<br></td>
+      </tr>
+      <tr>
+      <td>Identification mark</td>
+      <td><input type="text" placeholder="Identification marks" name="idmark" id="id mark" required></td>
+      </tr>
+      <br>
+      <tr>
+      <td>Date of birth<br></td>
+      <td><input type="date" id="start" name="dob"
+      value="2018-07-22"
+      min="1900-01-01" max="2022-12-31"><br></td>
+      <br>
+      </tr>
+      <tr>
+      <td>Weight</td>
+      <td><input type="text" placeholder="Enter Criminal Weight" name="cwt" required></td>
+      <br>
+      </tr>
+      <tr>
+      <td>Age</td>
+      <td><input type="text" placeholder="Enter Criminal Age" name="cage"  required></td>
+      <br>
+      </tr>
+      <tr>
+      <td>Height</td>
+      <td><input type="text" placeholder="Enter Criminal Height" name="cht" id="c ht" required></td>
+      <br>
+      </tr>
+      <br>
+    </table>
+  </div>
+  <div class="container">
+    <table>
+      <h1>FIR Details</h1>
+      <tr>
+      <td><b>FIR Id</b></td>
+      <td><input type="text" placeholder="Enter FIR Id" name="fid" required></td>
+      <br>
+      </tr>
+      <tr>
+        <td><b>FIR Date</b></td>
+        <td><input type="date" id="start" name="fdate"
+        value="2018-07-22"
+        min="1900-01-01" max="2022-12-31"><br></td>
+        <br>
+        </tr>
+        <tr>
+      <td><b>FIR Type</b></td>
+      <td><input type="text" placeholder="FIR Type" name="ftype" required></td>
+      </tr>
+      <br>
+      <tr>
+      <td>FIR Description<br></td>
+      <td><textarea name="fdesc" rows="6" cols="30"></textarea></td>
+      </tr>
+    </table>
+  </div>
+  <div class="container">
+    <table>
+      <h1>Court Details</h1>
+      <tr>
+      <td><b>Court Name</b></td>
+      <td><input type="text" placeholder="Enter Court Name" name="CoName" required></td>
+      <br>
+      </tr>
+      <tr>
+      <td><b>Public Prosecutor</b></td>
+      <td><input type="text" placeholder="Enter Name of Public Prosecutor" name="PuPro" required></td>
+      </tr>
+      <br>
+      <tr>
+      <td>Government Prosecutor<br></td>
+      <td><input type="text" placeholder="Enter Name of Government Prosecutor" name="GovPro" required></td>
+      </tr>
+      <tr>
+      <td>Court Address<br></td>
+      <td><textarea name="CoAddress" rows="6" cols="30"></textarea></td>
+      </tr>
+      <tr>
+      <td>Mode<br></td>
+      <td><input type="text" placeholder="Enter Mode" name="mode" required></td>
+      </tr>
+      <tr>
+      <td>Judge<br></td>
+      <td><input type="text" placeholder="Enter Name of Judge " name="judge" required></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="container">
+    <table>
+      <h1>Crime Details</h1>
+      <tr>
+      <td><b>Crime Section</b></td>
+      <td><input type="text" placeholder="Enter Crime Section" name="crsec" required></td>
+      <br>
+      </tr>
+      <tr>
+      <td><b>Proof of Crime</b></td>
+      <td><input type="text" placeholder="Enter Proof of Crime" name="crproof" required></td>
+      <br>
+      </tr>
+      <tr>
+      <td><b>Location</b></td>
+      <td><input type="text" placeholder="Enter Location" name="crloc" required></td>
+      </tr>
+      <br>
+      <tr>
+      <td>Punishment<br></td>
+      <td><input type="text" placeholder="Enter Punishment" name="puni" required></td>
+      </tr>
+      <tr>
+      <td>Description<br></td>
+      <td><textarea name="desc" rows="6" cols="30"></textarea></td>
+      </tr>
+      <tr>
+      <td>Type<br></td>
+      <td><input type="text" placeholder="Enter Crime Type" name="Crtype" required></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="container">
+    <table>
+        <h1>Prison Details</h1>
+        <tr>
+        <td><b>Prison Place</b></td>
+        <td><input type="text" placeholder="Enter Place" name="prplace" required></td>
+        <br>
+        </tr>
+        <tr>
+        <td><b>Prison Type</b></td>
+        <td><input type="text" placeholder="Enter Proof of Crime" name="prtype" required></td>
+        <br>
+        </tr>
+        <tr>
+        <td><b>Location</b></td>
+        <td><input type="text" placeholder="Enter Location" name="prloc" required></td>
+        </tr>
+        <br>
+        <tr>
+        <td>Duration<br></td>
+        <td><input type="text" placeholder="Enter Duration of Punishment" name="dur" required></td>
+        </ tr>
+        <tr>
+        <td>Release Date<br></td>
+        <td><input type="date" id="start" name="rdate"></td>
+        </tr>
+    </table>
+  </div>
+
+  <div class="container">
+    <table>
+      <h1>Witness Details</h1>
+      <tr>
+      <td><b>Name</b></td>
+      <td><input type="text" placeholder="Enter Witness Name" name="wname" required></td>
+      <br>
+      </tr>
+      <tr>
+      <td><b>Relation</b></td>
+      <td><input type="text" placeholder="Enter Relation of Witness to Criminal" name="wrel"></td>
+      <br>
+      </tr>
+      <tr>
+      <td><b>Age</b></td>
+      <td><input type="text" placeholder="Enter Age of Witness" name="wage" required></td>
+      </tr>
+      <br>
+      <tr>
+      <td><b>Gender</b><br></td>
+      <td><input type="radio" id="male" name="wgender" value="male"></td>
+      <td>Male
+      <td><input type="radio" id="female" name="wgender" value="female"></td>
+      <td>Female<br></td>
+      <td><input type="radio" id="third gender" name="wgender" value="third gender"></td>
+      <td>Specify not to say<br></td>
+      </tr>
+      <td>Date of Birth<br></td>
+      <td><input type="date" id="start" name="wdob"></td>
+      </tr>
+      <tr>
+      <td>Address<br></td>
+      <td><textarea name="wadd" rows="6" cols="30"></textarea></td>
+      </tr>
+      <td><b>Phone Number</b></td>
+      <td><input type="text" placeholder="Enter Age of Witness" name="wphno" required></td>
+      </tr>
+    </table>
+  </div>
+  <button type="Submit" class="registerbtn" name="sub" value="LOGIN">Submit Details</button>
+</form>
+</body>
+</html>

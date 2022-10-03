@@ -1,0 +1,78 @@
+body  
+{  
+    margin: 50px;  
+    padding: 75 px;  
+    background-color:#7dd6ffba;  
+    font-family:'fantasy';  
+    background-image: url(5D27YV.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}  
+.login{   
+        padding: 30px; 
+        background:darkgrey;  
+        border-radius: 20px ;  
+        width: 25%; 
+        display: inline-block;
+        margin-left: 10%;
+        margin-top: 5%;
+}
+marquee{
+    width:100%; 
+    direction:right ;
+    height:50px;
+    color:blanchedalmond;
+    font-size: 30px;
+}
+h2{    
+    color:darkslategray;  
+    text-align: auto;
+    padding-left: 30%;
+}
+label{  
+    color: #0f1110;  
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 45cm;  
+}  
+#Uname{  
+    width: 90%;  
+    height: 30px;  
+    border: #0f1110;  
+    border-width: 5px;
+    border-radius: 12px;  
+    padding-left: 10px;  
+}  
+#Pass{  
+    width: 90%;  
+    height: 30px;  
+    border: #0f1110;  
+    border-width: 5px;
+    border-radius: 12px;  
+    padding-left: 10px;  
+      
+}  
+button{  
+    width: 90%;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: rgb(0, 14, 1); 
+    float: auto; 
+    background-color: rgb(91, 244, 91);
+    position: center;
+    cursor: pointer;
+}  
+span{  
+    color: rgb(59, 29, 229);  
+    font-size: 15px;  
+}  
+a{  
+    float: auto;   
+}  
+button:hover
+{
+    opacity: 0.8;
+}
